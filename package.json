@@ -1,0 +1,16 @@
+{
+  "name": "media-forge-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Workspace scripts for running client and server together",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
